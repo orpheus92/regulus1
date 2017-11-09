@@ -21,7 +21,7 @@ import {
   CycleToggleButton,
   CycleCellHeader,
   // CycleCellFooter,
-} from '@cycle/canvas';
+} from '@regulus1/canvas';
 
 const FORWARD_ICON_CLASS = 'fa fa-mail-forward';
 
@@ -78,7 +78,7 @@ const CycleContentPlugin: JupyterLabPlugin<NotebookPanel.IContentFactory> = {
   requires: [IEditorServices],
   autoStart: true,
   activate: (app: JupyterLab, editorServices: IEditorServices) => {
-    console.log('@cycle/notebook-extension:factory');
+    console.log('@regulus1/notebook-extension:factory');
     let editorFactory = editorServices.factoryService.newInlineEditor.bind(
       editorServices.factoryService);
     return new CycleContentFactory({ editorFactory });

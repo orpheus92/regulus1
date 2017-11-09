@@ -29,7 +29,7 @@ import {
 
 import {
   Manager, CycleCanvas
-} from '@cycle/canvas';
+} from '@regulus1/canvas';
 
 export
 const ICycleCanvasExtension = new Token<ICycleCanvasExtension>('cycle.extension.canvas');
