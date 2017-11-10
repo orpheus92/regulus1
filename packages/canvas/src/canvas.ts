@@ -11,6 +11,15 @@ import {
 } from '@phosphor/widgets';
 
 import {
+    DocumentRegistry
+} from '@jupyterlab/docregistry';
+
+
+import {
+    NotebookPanel,INotebookModel
+} from '@jupyterlab/notebook';
+
+import {
   Drag, IDragEvent
 } from '@phosphor/dragdrop';
 
@@ -21,7 +30,7 @@ const JUPYTER_CELL_MIME = 'application/vnd.jupyter.cells';
 
 export
 class CycleCanvas extends Widget {
-  constructor() {
+  constructor(panel: NotebookPanel, context: DocumentRegistry.IContext<INotebookModel>) {
     super();
 
     console.log('new CycleCanvas');

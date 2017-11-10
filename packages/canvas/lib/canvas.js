@@ -15,7 +15,7 @@ var d3 = require("d3");
 var JUPYTER_CELL_MIME = 'application/vnd.jupyter.cells';
 var CycleCanvas = /** @class */ (function (_super) {
     __extends(CycleCanvas, _super);
-    function CycleCanvas() {
+    function CycleCanvas(panel, context) {
         var _this = _super.call(this) || this;
         console.log('new CycleCanvas');
         _this.id = 'cyclus-canvas';
